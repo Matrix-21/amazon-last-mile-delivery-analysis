@@ -28,7 +28,7 @@ Full dashboard: [Last_Mile_Delivery_Dashboard.pdf](dashboard/Last_Mile_Delivery_
 | Transit Time is the problem | Late deliveries average 202 mins transit vs 123 mins on-time - a 64% difference. Preparation time is identical (~10 mins) regardless of outcome. |
 | Semi-Urban zones are critical | Semi-Urban has the highest avg transit time at 238 mins - 2x higher than Urban (109 mins). |
 | Traffic beats weather | Jam traffic adds 46+ mins regardless of weather condition. |
-| Senior agents underperform | Senior agents (35+) average 140 mins vs 109 mins for junior agents — a 28% gap. |
+| Senior agents underperform | Senior agents (35+) average 140 mins vs 109 mins for junior agents - a 28% gap. |
 | Evening is the worst slot | Evening orders (5–9PM) average 139 mins vs 102 mins for morning orders. |
 
 ---
@@ -93,7 +93,7 @@ Other (2.55%) and Urban (2.43%) have the highest flagged late rates. Semi-Urban 
 | Column | Definition |
 |--------|-----------|
 | Preparation_Time | Pickup_Time minus Order_Time in minutes |
-| Transit_Time | Delivery_Time column — minutes from pickup to drop |
+| Transit_Time | Delivery_Time column - minutes from pickup to drop |
 | Late_Delivery_Flag | Late if Delivery_Time exceeds 1.5x area average under normal traffic and weather |
 | Time_Slot | Morning / Afternoon / Evening / Night based on Order_Time |
 | Age_Segment | Junior under 25 / Mid 25–35 / Senior over 35 |
