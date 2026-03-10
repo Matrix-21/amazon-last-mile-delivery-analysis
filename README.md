@@ -1,4 +1,4 @@
-# Amazon Last Mile Delivery — Performance Analysis
+# Amazon Last Mile Delivery - Performance Analysis
 
 **Core Question:** Is Preparation Time or Transit Time the bigger driver of Amazon's last mile delivery delays?
 
@@ -25,8 +25,8 @@ Full dashboard: [Last_Mile_Delivery_Dashboard.pdf](dashboard/Last_Mile_Delivery_
 
 | Finding | Insight |
 |---------|---------|
-| Transit Time is the problem | Late deliveries average 202 mins transit vs 123 mins on-time — a 64% difference. Preparation time is identical (~10 mins) regardless of outcome. |
-| Semi-Urban zones are critical | Semi-Urban has the highest avg transit time at 238 mins — 2x higher than Urban (109 mins). |
+| Transit Time is the problem | Late deliveries average 202 mins transit vs 123 mins on-time - a 64% difference. Preparation time is identical (~10 mins) regardless of outcome. |
+| Semi-Urban zones are critical | Semi-Urban has the highest avg transit time at 238 mins - 2x higher than Urban (109 mins). |
 | Traffic beats weather | Jam traffic adds 46+ mins regardless of weather condition. |
 | Senior agents underperform | Senior agents (35+) average 140 mins vs 109 mins for junior agents — a 28% gap. |
 | Evening is the worst slot | Evening orders (5–9PM) average 139 mins vs 102 mins for morning orders. |
@@ -67,17 +67,17 @@ amazon-last-mile-delivery-analysis/
 
 ## Business Questions Answered
 
-**Q1 — Operational:** Which zones have the highest average transit time?
-Semi-Urban zones take 238 mins on average — 2x longer than Urban zones at 109 mins.
+**Q1 - Operational:** Which zones have the highest average transit time?
+Semi-Urban zones take 238 mins on average - 2x longer than Urban zones at 109 mins.
 
-**Q2 — Agent Performance:** Do lower rated agents take longer to deliver?
+**Q2 - Agent Performance:** Do lower rated agents take longer to deliver?
 Low-rated agents average 174 mins vs 115 mins for high-rated agents — a 50% difference.
 
-**Q3 — Time and External Factors:** Which time slots and conditions drive delays?
+**Q3 - Time and External Factors:** Which time slots and conditions drive delays?
 Evening (5–9 PM) is the worst slot. Traffic Jam is the dominant external factor, more impactful than weather.
 
-**Q4 — Business Impact:** Which zones have the highest late delivery rate?
-Other (2.55%) and Urban (2.43%) have the highest flagged late rates. Semi-Urban shows 0% due to a structural limitation in the late delivery definition — see insights document for details.
+**Q4 - Business Impact:** Which zones have the highest late delivery rate?
+Other (2.55%) and Urban (2.43%) have the highest flagged late rates. Semi-Urban shows 0% due to a structural limitation in the late delivery definition - see insights document for details.
 
 ---
 
@@ -85,7 +85,7 @@ Other (2.55%) and Urban (2.43%) have the highest flagged late rates. Semi-Urban 
 
 - **Source:** Amazon Delivery Dataset (Kaggle)
 - **Records:** 43,648 deliveries
-- **Period:** February – April 2022
+- **Period:** February - April 2022
 - **Zones:** Urban, Metropolitan, Semi-Urban, Other
 
 **Calculated Columns Added:**
@@ -103,8 +103,8 @@ Other (2.55%) and Urban (2.43%) have the highest flagged late rates. Semi-Urban 
 
 ## Recommendations
 
-1. Focus all improvement efforts on Transit Time reduction — preparation time is not the bottleneck
-2. Implement real-time traffic routing — Jam traffic adds 46+ mins and has the highest ROI for intervention
+1. Focus all improvement efforts on Transit Time reduction - preparation time is not the bottleneck
+2. Implement real-time traffic routing - Jam traffic adds 46+ mins and has the highest ROI for intervention
 3. Increase agent staffing during Evening (5–9PM) peak window
 4. Expand warehouse presence and agent network in Semi-Urban zones
 5. Provide digital literacy training and pre-planned routes for Senior agents (35+)
